@@ -1,0 +1,1 @@
+pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning
