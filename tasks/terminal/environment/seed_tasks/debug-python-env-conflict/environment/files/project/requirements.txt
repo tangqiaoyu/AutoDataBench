@@ -1,0 +1,4 @@
+transformers==4.40.0
+datascience-utils==2.1.0
+pandas>=2.0.0
+scikit-learn==1.4.0

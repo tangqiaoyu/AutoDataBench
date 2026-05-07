@@ -1,0 +1,19 @@
+{"timestamp": "2024-01-15T10:30:00Z", "level": "INFO", "session_id": "sess_abc123", "message": "User login successful", "source": "auth-service", "request_id": "req_001"}
+{"timestamp": "2024-01-15T10:30:05Z", "level": "INFO", "session_id": "sess_abc123", "message": "Session created", "source": "session-service", "request_id": "req_002", "duration_ms": 45}
+{"timestamp": "2024-01-15T10:30:10", "level": "WARN", "session_id": "sess_abc123", "message": "High latency detected", "source": "api-gateway", "duration_ms": 1200}
+{"timestamp": "2024-01-15T10:30:15+02:00", "level": "INFO", "session_id": "sess_def456", "message": "Data sync initiated", "source": "sync-service", "request_id": "req_003"}
+{"timestamp": "2024-01-15T10:30:20Z", "level": "ERROR", "session_id": "sess_ghi789", "message": "Database connection failed: "café" server unavailable", "source": "db-service", "request_id": "req_004"}
+{"timestamp": "2024-01-15T10:30:25Z", "level": "DEBUG", "session_id": "sess_abc123", "message": "Cache miss for key: user_profile_881", "source": "cache-service"}
+{"timestamp": "2024-01-15T10:30:30Z", "level": "INFO", "session_id": "sess_jkl012", "message": "Payment processed", "source": "payment-service", "request_id": "req_005", "status_code": 201, "duration_ms": 320000}
+{"timestamp": "2024-01-15T10:30:35Z", "level": "TRACE", "session_id": "sess_mno345", "message": "Starting request processing", "source": "api-service", "request_id": "req_006", "duration_ms": -5}
+{"timestamp": "invalid_time", "level": "ERROR", "session_id": "sess_pqr678", "message": "Configuration error", "source": "config-service"}
+{"timestamp": "2024-01-15T10:30:45Z", "level": "INFO", "session_id": "sess_stu901", "message": "File upload complete", "source": "storage-service", "request_id": "req_007", "duration_ms": 150}
+{"timestamp": "2024-01-15T10:30:50Z", "level": "WARN", "session_id": "sess_abc123", "message": "Memory usage at 85%", "source": "monitoring-service", "request_id": "req_008"}
+{"timestamp": "2024-01-15T10:30:55Z", "level": "INFO", "session_id": "sess_vwx234", "message": "El usuario ha cerrado sesión", "source": "auth-service", "request_id": "req_009"}
+{"timestamp": "2024-01-15T10:31:00Z", "level": "CRITICAL", "session_id": "sess_yza567", "message": "System crash imminent", "source": "monitoring-service", "request_id": "req_010"}
+{"timestamp": "2024-01-15T10:31:05Z", "level": "INFO", "session_id": "sess_bcd890", "message": "Backup completed successfully", "source": "backup-service", "request_id": "req_011", "duration_ms": 120000}
+{"timestamp": "2024-01-15T10:31:10Z", "level": "INFO", "session_id": "sess_efg123", "message": "Notification sent: café order confirmed", "source": "notification-service", "request_id": "req_012"}
+{"timestamp": "2024-01-15T10:31:15Z", "session_id": "sess_hij456", "message": "Metric collection", "source": "metrics-service", "duration_ms": 25}
+{"timestamp": "2024-01-15T10:31:20Z", "level": "ERROR", "session_id": "sess_klm789", "message": "Failed to parse response: unexpected character 'é'", "source": "parser-service", "request_id": "req_013"}
+{"timestamp": "2024-01-15T10:31:25Z", "level": "INFO", "session_id": "sess_nop012", "message": "Queue processed", "source": "queue-service", "request_id": "req_014", "status_code": 999}
+{"timestamp": "2024-01-15T10:31:30Z", "level": "DEBUG", "session_id": "sess_qrs345", "message": "Debug info: ", "source": "debug-service", "request_id": "req_015"}

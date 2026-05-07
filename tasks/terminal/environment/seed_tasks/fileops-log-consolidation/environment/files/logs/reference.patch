@@ -1,0 +1,7 @@
+{
+  "req_004": {"duration_ms": 5000},
+  "req_006": {"duration_ms": 10},
+  "sess_hij456": {"level": "INFO", "request_id": "req_016"},
+  "req_015": "Debug info: memory_usage=45%, cpu_usage=30%",
+  "sess_klm789": {"status_code": 500}
+}

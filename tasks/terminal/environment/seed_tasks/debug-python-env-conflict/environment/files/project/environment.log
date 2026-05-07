@@ -1,0 +1,43 @@
+=================================== FAILURES ===================================
+__________________________ test_datascience_loader ___________________________
+
+    def test_datascience_loader():
+        """Uses optimized_loader which breaks with numpy>=1.24.0"""
+        loader = DataLoader()
+    
+        # optimized_loader was removed in numpy 1.24.0
+        try:
+            from datascience_utils.core import optimized_loader
+            data = optimized_loader("test")
+            assert data is not None
+        except ImportError as e:
+            if "optimized_loader" in str(e):
+>               raise ImportError("numpy too new for datascience-utils")
+E               ImportError: numpy too new for datascience-utils
+
+test_datascience.py:18: ImportError
+__________________________ test_transformers_new_feature ___________________________
+
+    def test_transformers_new_feature():
+        """Uses a numpy feature added in 1.24.0"""
+        # new_feature was added in numpy 1.24.0
+        arr = np.array([1, 2, 3])
+    
+        # This will fail with numpy<1.24.0
+        try:
+            # Simulating a transformers internal call that uses new numpy API
+            if hasattr(arr, 'new_feature'):
+                result = arr.new_feature()
+            else:
+                # Mock what transformers actually does
+                result = np.lib.stride_tricks.sliding_window_view(arr, 2)
+            assert result is not None
+        except AttributeError as e:
+            if "new_feature" in str(e):
+>               raise ImportError("numpy too old for transformers")
+E               ImportError: numpy too old for transformers
+
+test_transformers.py:22: ImportError
+=========================== short test summary info ============================
+FAILED tests/test_datascience.py::test_datascience_loader - ImportError: numpy too new for datascience-utils
+FAILED tests/test_transformers.py::test_transformers_new_feature - ImportError: numpy too old for transformers

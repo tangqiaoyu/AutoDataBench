@@ -1,0 +1,12 @@
+version = "1.0"
+
+[metadata]
+difficulty = "easy"
+category = "data-processing"
+tags = [ "database", "backup", "sqlite",]
+
+[verifier]
+timeout_sec = 180.0
+
+[agent]
+timeout_sec = 900.0
